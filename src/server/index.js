@@ -1,4 +1,5 @@
 projectDetails={};
+const fetch = require('node-fetch');
 const geoNamesURL = 'http://api.geonames.org/searchJSON?q=';
 const username = 'rohanagarwal11';
 const weatherbitforecastURL = 'https://api.weatherbit.io/v2.0/forecast/daily?lat=';
