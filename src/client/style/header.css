@@ -1,0 +1,9 @@
+#page .navbar{
+    background-color: black;
+    padding:10px
+}
+#navbar_icons li{
+    display: inline;
+    padding-right:10px;
+
+}

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8"/>        
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <title>My Travel App</title>
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <link href="/style/header.css" rel="stylesheet" type="text/css">
+    </head>
+        <body>
+            <div id="page">
+                <!-- Navbar contents-->
+                <header class="navbar">
+                    <p class="my_logo">Travel App</p>
+                    <ul id="navbar_icons">
+                    <!-- Icons for social media-->
+                        <li class="icons"><a href="https://www.facebook.com/rohan.agarwal.9275/"><i class="fa fa-facebook"></i></a></li>
+                        <li class="icons"><a href="https://www.instagram.com/rohan11.08/"><i class="fa fa-instagram"></i></a></li>
+                        <li class="icons"><a href="https://www.linkedin.com/in/rohan-agarwal-5063061a0/"><i class="fa fa-linkedin"></i></a></li>
+                        <li class="icons"><a href="https://github.com/RohanAgarwal1108"><i class="fa fa-github"></i></a></li>
+                        <li class="icons"><a href="https://medium.com/@rohan_agarwal"><i class="fa fa-medium"></i></a></li>
+                    </ul>
+                </header>
+                <p>Make an Entry!</p>
+                <form id="trip_form">
+                    <input type="text" id="from_place" name="from" placeholder="From" required>
+                    <input type="text" id="to_place" name="to" placeholder="To" required>
+                    <label for="travel_date"> departing on </label>
+                    <input type="date" id="travel_date" name="date" required>
+                    <input type="submit" name="submit" id="travel_details_submit" value="Submit">
+                </form>
+                <div class="cards">
+                    <img class="rounded" alt="My Image"/>
+                    <div class="content">
+                        <p id="destination">Destination: </p>
+                        <p>Travel date:</p>
+                        <p>Days to go:</p>
+                        <p>Weather:</p>
+                    </div>
+                </div>
+                <footer>
+                    <p class="footer">Made with love by Rohan Agarwal</p>
+                </footer>
+            </div>
+            
+        </body>
+</html>
