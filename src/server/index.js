@@ -44,6 +44,7 @@ app.post('/testing', (req,res)=>{
             projectDetails['from']=req.body.fromEntry;
             projectDetails['to']=req.body.toEntry;
             projectDetails['date']=req.body.dateEntry;
+            projectDetails['todo_list']=req.body.todoEntry;
             res.send(projectDetails);
         })
 } 

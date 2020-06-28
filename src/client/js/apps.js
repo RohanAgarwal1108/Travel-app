@@ -5,10 +5,12 @@ function handleSubmit(event) {
     let fromText = document.getElementById('from_place').value
     let toText = document.getElementById('to_place').value
     let dateText = document.getElementById('travel_date').value
+    let todoText=document.getElementById('todo_list').value
     let reqBody={
         fromEntry:`${fromText}`,
         toEntry:`${toText}`,
-        dateEntry:`${dateText}`
+        dateEntry:`${dateText}`,
+        todoEntry:`${todoText}`
     };
 
     console.log("::: Form Submitted :::")
@@ -24,6 +26,7 @@ function handleSubmit(event) {
         document.getElementById('date123').innerHTML =`Travel Date=${res.date}`;
         document.getElementById('weather').innerHTML =`Weather=${res.weather}, Temperature=${res.temp}`;
         document.getElementById('img123').setAttribute('src',res.image);
+        document.getElementById('todo123').innerHTML=`Todo=${res.todo_list}`;
     })
 }
 

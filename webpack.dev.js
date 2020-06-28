@@ -2,6 +2,7 @@ const path = require("path")
 const { CleanWebpackPlugin } = require('clean-webpack-plugin');
 const HtmlWebPackPlugin = require('html-webpack-plugin');
 const webpack = require("webpack")
+const WorkboxPlugin = require('workbox-webpack-plugin');
 
 
 module.exports = {
@@ -48,7 +49,8 @@ plugins:[
         // Automatically remove all unused webpack assets on rebuild
         cleanStaleWebpackAssets: true,
         protectWebpackAssets: false
-})
+}),
+new WorkboxPlugin.GenerateSW()
 
 ]
 }

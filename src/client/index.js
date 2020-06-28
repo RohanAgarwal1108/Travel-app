@@ -1,4 +1,4 @@
-import { handleSubmit } from './js/formHandler'
+import { handleSubmit } from './js/apps'
 import './style/footer.scss'
 import './style/header.scss'
 import './style/style.scss'

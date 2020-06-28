@@ -27,6 +27,8 @@
                     <input type="text" id="to_place" name="to" placeholder="To" required>
                     <label for="travel_date" style="color:black;"> Departure </label>
                     <input type="date" id="travel_date" name="date" required>
+                    <label for="todo_list" style="color:black;"> Todo List </label>
+                    <input type="text" id="todo_list" name="Eg. Passport etc." required>
                     <input type="submit" name="submit" id="travel_details_submit" value="Submit" onclick="return Client.handleSubmit(event)" onsubmit="return Client.handleSubmit(event)">
                 </form>
                 <div class="cards">
@@ -36,6 +38,7 @@
                         <p id="from">From</p>
                         <p id="date123">Travel Date</p>
                         <p id="weather">Weather:</p>
+                        <p id="todo123">Todo:</p>
                     </div>
                 </div>
             </div>
@@ -43,6 +46,14 @@
                     <p class="footer" style="color: blanchedalmond;">Made with love by Rohan Agarwal</p>
                 </footer>
             </div>
-            
+            <script>
+                // Check that service workers are supported
+                if ('serviceWorker' in navigator) {
+                    // Use the window load event to keep the page load performant
+                    window.addEventListener('load', () => {
+                        navigator.serviceWorker.register('/service-worker.js');
+                    });
+                }
+               </script>             
         </body>
 </html>
