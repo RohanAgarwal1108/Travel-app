@@ -19,11 +19,11 @@ function handleSubmit(event) {
     })
     .then(res => res.json())
     .then(function(res) {
-        document.getElementById('destination').innerHTML=`Destination=${res.body.to}`;
-        document.getElementById('from').innerHTML =`From=${res.body.from}`;
-        document.getElementById('date123').innerHTML =`Travel Date=${res.body.date}`;
-        document.getElementById('weather').innerHTML =`Weather=${res.body.weather}, Temperature=${res.body.temp}`;
-        document.getElementById('img123').setAttribute('src',res.body.image);
+        document.getElementById('destination').innerHTML=`Destination=${res.to}`;
+        document.getElementById('from').innerHTML =`From=${res.from}`;
+        document.getElementById('date123').innerHTML =`Travel Date=${res.date}`;
+        document.getElementById('weather').innerHTML =`Weather=${res.weather}, Temperature=${res.temp}`;
+        document.getElementById('img123').setAttribute('src',res.image);
     })
 }
 
