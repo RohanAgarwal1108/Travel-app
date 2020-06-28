@@ -4,8 +4,7 @@
         <meta charset="utf-8"/>        
         <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
         <title>My Travel App</title>
-        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-        <link href="/style/header.css" rel="stylesheet" type="text/css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     </head>
         <body>
             <div id="page">
@@ -21,25 +20,27 @@
                         <li class="icons"><a href="https://medium.com/@rohan_agarwal"><i class="fa fa-medium"></i></a></li>
                     </ul>
                 </header>
-                <p>Make an Entry!</p>
-                <form id="trip_form">
+                <div id="page_noheader">
+                <h1 id="entry">Make an Entry!</h1>
+                <form id="trip_form" onsubmit="return Client.handleSubmit(event)">
                     <input type="text" id="from_place" name="from" placeholder="From" required>
                     <input type="text" id="to_place" name="to" placeholder="To" required>
-                    <label for="travel_date"> departing on </label>
+                    <label for="travel_date" style="color:black;"> Departure </label>
                     <input type="date" id="travel_date" name="date" required>
-                    <input type="submit" name="submit" id="travel_details_submit" value="Submit">
+                    <input type="submit" name="submit" id="travel_details_submit" value="Submit" onclick="return Client.handleSubmit(event)" onsubmit="return Client.handleSubmit(event)">
                 </form>
                 <div class="cards">
-                    <img class="rounded" alt="My Image"/>
+                    <img class="rounded" id="img123" alt="My Image"/>
                     <div class="content">
                         <p id="destination">Destination: </p>
-                        <p>Travel date:</p>
-                        <p>Days to go:</p>
-                        <p>Weather:</p>
+                        <p id="from">From</p>
+                        <p id="date123">Travel Date</p>
+                        <p id="weather">Weather:</p>
                     </div>
                 </div>
+            </div>
                 <footer>
-                    <p class="footer">Made with love by Rohan Agarwal</p>
+                    <p class="footer" style="color: blanchedalmond;">Made with love by Rohan Agarwal</p>
                 </footer>
             </div>
             

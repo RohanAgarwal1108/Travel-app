@@ -1,0 +1,14 @@
+#page .navbar{
+    display: flex;
+    flex-direction: inline-block;
+    align-items: center;
+    justify-content: space-evenly;
+    background-color: black;
+    padding:10px
+}
+#navbar_icons li{
+    flex-direction: row;
+    display: inline;
+    padding-right:10px;
+
+}
