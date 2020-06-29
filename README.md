@@ -12,7 +12,7 @@ This custom app allows the user to add the destination, date of vacation and a b
 
 1. Download or clone the project:
 ```
-git clone https://github.com/saltamay/travel-app.git [folder_name]
+git clone https://github.com/RohanAgarwal1108/Travel-app
 ```
 2. Install dependencies
 ```
