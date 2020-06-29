@@ -1,5 +1,5 @@
 const request = require('supertest');
-import { app }from '../server/index'
+const app = require("../server/index")
 
 
 describe('Post Endpoints', () => {
