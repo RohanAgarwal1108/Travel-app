@@ -99,5 +99,3 @@ async function image(dest) {
         console.log('error', e);
     }
 }
-
-export{ app }
