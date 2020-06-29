@@ -22,11 +22,11 @@ app.use(cors())
 app.use(express.static('dist'))
 //setting the path
 app.get('/', function (req, res) {
-    res.sendFile('dist/index.html')
+    res.status(200).send('dist/index.html');
 })
 //listening to port 8081
 app.listen(8081, function () {
-    console.log('Example app listening on port 8081!')
+    //console.log('Example app listening on port 8081!')
 })
 //adding a route
 app.post('/testing', (req,res)=>{
@@ -99,3 +99,4 @@ async function image(dest) {
         console.log('error', e);
     }
 }
+export { app };
