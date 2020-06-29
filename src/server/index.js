@@ -26,7 +26,7 @@ app.get('/', function (req, res) {
 })
 //listening to port 8081
 app.listen(8081, function () {
-    //console.log('Example app listening on port 8081!')
+    console.log('Example app listening on port 8081!')
 })
 //adding a route
 app.post('/testing', (req,res)=>{
@@ -99,4 +99,4 @@ async function image(dest) {
         console.log('error', e);
     }
 }
-export { app };
+module.exports = app;
